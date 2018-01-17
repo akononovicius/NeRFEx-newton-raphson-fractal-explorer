@@ -11,6 +11,11 @@ using mathematical formulas (e.g., "4\*x^2+3\*x+1=0") as well as words
 (e.g. "cat"; these are translated into formulas using computer character
 codes).
 
+Original code was developed 2007-2011 and recently cleaned up and translated
+into English.
+
+The code is available under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
+
 ## Help window text
 
 The following text is also available in the program:
