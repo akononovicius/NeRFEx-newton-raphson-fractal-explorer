@@ -1,4 +1,6 @@
-# NeRFEx - Newton-Raphson Fractal Explorer This is Java code for
+# NeRFEx - Newton-Raphson Fractal Explorer
+
+This is Java code for
 an application which enables exploration of fractals generated using
 Newton-Raphson method. Java applet based on this program is featured on
 [Physics of Risk](http://rf.mokslasplius.lt/newton-raphson/) blog.
@@ -14,16 +16,19 @@ codes).
 The following text is also available in the program:
 
 ```
-NeRFEx - Newton Raphson Fractal Explorer v110505 programing by
-Aleksejus Kononovicius
+NeRFEx - Newton Raphson Fractal Explorer
+v110505
+programing by Aleksejus Kononovicius
 
 This program was optimized for quad core preformance (four threads are
 used for generating fractal).
 
-TESTED This peace of software was tested on: Windows XP OS, CPU 4x2.4 GHz,
+TESTED
+This peace of software was tested on: Windows XP OS, CPU 4x2.4 GHz,
 4 GB RAM. "Cat" of quality 400 and iterations 30 rendered in ~2.4 seconds.
 
-BASICS OF USING FRACTAL EXPLORER It shoudln't be hard for advanced user
+BASICS OF USING FRACTAL EXPLORER
+It shoudln't be hard for advanced user
 (prefered basic knowledge of fractals) to use NeRFEx, so I'll explain
 usage of this application very briefly.  Then working on this explorer
 I tried to make it look like internet browser. So it's trivial that in
@@ -51,23 +56,27 @@ reach the root. Decreasing it makes image look darker, increasing it
 makes image look brighter.  "Over!" JLabel shows progress. While fractal
 is being processed it will be written "Started".
 
-ADVANCED FEATURES: 1. Formula input. Those who are good with numbers
+ADVANCED FEATURES:
+1. Formula input. Those who are good with numbers
 can try entering formula instead of fractal "name". If you want to
 do that you must use special syntax (it strongly ressembles one used
 in MS Excel) - <coeficient>*x^<exponent>. "<coeficient>*" element
 can be ommited if coeficient is equal 1, if exponent is equal 1
 then you can omit "^<exponent>" or if it's equal 0 then you can omit
-"*x^<exponent>". Example: 11*x^5-x^4-2*x-12-x.  2. Zoom in/out. Push
+"*x^<exponent>". Example: 11*x^5-x^4-2*x-12-x.
+2. Zoom in/out. Push
 left (zoom in) or right (zoom out) mouse button and drag mouse over
 region of fractal image - you'll see it zoomed or actual image put in
 region you marked. Each zoom in/zoom out cases fractal to be rerendered.
 3. Move point of view. Push middle mouse button and drag the point of
 image to another point of fractal image in order to move image. Image
-is rerendered.  4. Predifined fractals. There are some fractals which
+is rerendered.
+4. Predifined fractals. There are some fractals which
 are bundled with NeFREx. There 8 based on formulas (so you could
 examine this advanced feature) and 4 are base on fractal names (less
 explanation needed). After "opening" predifined fractal it will render
-itself.  5. Coloring meniu. Here you can find algorithms used to color
+itself.
+5. Coloring meniu. Here you can find algorithms used to color
 fractals. This generator enabls multilayer (or multichannel) fractal
 coloring. This JMenu enables your choice of coloring table for given
 channel (or layer), also this JMenus covers interaction algorythms between
@@ -77,22 +86,28 @@ your choice, 3LA (3 Layer Average) works with layers which are averaged
 in order to get final result, 2LA (2 Layer Average) uses only two layers
 (Red and Green channel choices) in same maner 3LA does. 3LMi and 3LMa
 are similar to both 3LA and 2LA as they return Minimum or Maximum value
-respectively.  6. View meniu. Here you can find image stretching and
-default fractal bounds ({Xmin...Xmax, Ymin...Ymax}) options.  7. Alerts
+respectively.
+6. View meniu. Here you can find image stretching and
+default fractal bounds ({Xmin...Xmax, Ymin...Ymax}) options.
+7. Alerts
 meniu. You can optionaly disable alerts, which come in two types -
 sound (you'll hear beep then fractal is finished if it's on) and message
 (you'll see error or generation time message if it's on).
 
-TIMING ISSUES Rendering fractal can take some time. I'll give you some
-tips to estimate time needed to render fractal.  * If you want to know
+TIMING ISSUES
+Rendering fractal can take some time. I'll give you some
+tips to estimate time needed to render fractal.
+* If you want to know
 atleast aproximate rendering time, you must render one sample fractal
 (i ussually prefere using "cat" of quality 400 and iterations 30) and
-track how long did it take. After this you can use following tips.  *
-Increasing quality from k to l, increases rendering time from i seconds
-to i*(l/k)^2.  * Increasing number of iterations from m to n, increases
+track how long did it take. After this you can use following tips.
+* Increasing quality from k to l, increases rendering time from i seconds
+to i*(l/k)^2.
+* Increasing number of iterations from m to n, increases
 rendering time from i seconds to i*(n/m) (worst case scenario).
 
-NEWTON RAPHSON METHOD Well you could save your time and
+NEWTON RAPHSON METHOD
+Well you could save your time and
 visit either http://en.wikipedia.org/wiki/Newton-Raphson or
 http://rf.mokslasplius.lt/newton-raphson in order to familarise yourself
 with Newton-Raphson method.  For those who are too lazy to check out
